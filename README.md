@@ -1,6 +1,6 @@
 <html>
  <body>
   <h1>Portfolio</h1>
-  <a href="/fanikauppa/">Fanikauppa (react)</a>
+  <a href="https://allu16.github.io/fanikauppa/">Fanikauppa (react)</a>
  </body>
 </html>
