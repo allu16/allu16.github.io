@@ -2,6 +2,9 @@ body {
     background-color: black;
     color: lightskyblue;
     background-image: url("GOdoq29WQAAIaP4.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 }
 
 
