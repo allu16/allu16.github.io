@@ -41,6 +41,12 @@ header {
 	font-size: 1.2em;
 }
 
+@media screen and (max-width: 1000px) {
+	header {
+		font-size: 1.5em;
+	}
+}
+
 header a {
 	font-weight: bold;
 	text-decoration: none;
@@ -79,4 +85,14 @@ li {
 
 .medium-example-image {
 	height: 4em;
+}
+
+.question {
+	background-color: #111;
+}
+
+.question > input, button {
+	margin: 1em;
+
+	color: Black;
 }
