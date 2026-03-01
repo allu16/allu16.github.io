@@ -92,7 +92,33 @@ li {
 }
 
 .question > input, button {
+	height: 2em;
+
 	margin: 1em;
 
 	color: Black;
+}
+
+.question > input {
+	width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+	header {
+		font-size: 1.5em;
+	}
+
+	.question > input, button {
+		height: 3em;
+
+		margin: 1.5em;
+	}
+	
+	.question > button {
+		width: 30%;
+	}
+
+	.question > input {
+		width: 70%;
+	}
 }
