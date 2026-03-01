@@ -77,7 +77,6 @@
 				</p>
 				<img class="example-image medium-example-image" src="./images/c_silmukka_esimerkki.png">
 			</div>
-
 		</div>
 
 		<div>
@@ -90,7 +89,37 @@
 			</p>
 		</div>
 
-	</div>
+		<div>
+			<h2>Funktiot / Metodit</h2>
+			<p>
+				Funktiot on osa koodia joka sisältää muuta koodia samallaa tavalla kuin silmukat ja ehtolausekkeet mutta funktioissa itsessään ei ole toimintoja kuten ehdollinen koodin ajaminen ja moninkertainen koodin ajo. Funktion koodi ajetaan vain silloin kun jossain muualla koodissa kutsutaan kyseistä funktiota.
+			</p>
 
+			<div class="python-example">
+				<h3>Python</h3>
+				<p>
+					Pythonissa käytetään "def" sanaa kun esitellään funktio. "def" jälkeen tulee funktion nimi jolla sitä voidaan kutsua. Funktion sisällä on toinen funktio nimeltä print joka tulostaa sille annetun tiedon ruudulle.
+				</p>
+				<img class="example-image medium-example-image" src="./images/python_silmukka_esimerkki.png">
+			</div>
+
+			<div class="java-example">
+				<h3>Java</h3>
+				<p>
+					Javassa yleensä käytetään sanaa metodi mutta tämä on vain synonyymi funktion kanssa. Java eroaa pythonista sillä että kuten muuttujien kanssa myös metodeille pitää erikseen asettaa tyyppi. Tämä tyyppi määrittää minkä tyyppisen muuttujan metodi palauttaa kun sitä kutsutaan. Tässä tapauksessa metodin tyypiksi on asetettu "void" joka tarkoittaa että metodi ei palauta mitään. Kuten aikaisemmissa esimerkeissä tässäkin kutsutaan metodia joka tulostaa tekstiä ruudulle.
+				</p>
+				<img class="example-image medium-example-image" src="./images/java_silmukka_esimerkki.png">
+			</div>
+
+			<div class="c-example">
+				<h3>C</h3>
+				<p>
+					C kielessä funktioiden tyyppi pitää myös antaa erikseen. Tässä tapauksessa annoimme funktion tyypiksi "int" (integer eli kokonaisluku) eli funktio palauttaa siis "int" tyyppisen muuttujan. Funktion sisällä on printf funktio joka tulostaa tekstiä ruudulle. Sen jälkeen on "return 0;" tässä "return" sanan jälkeen määritellään mitä funktio palauttaa. Eli koska olemme asettaneet "return":in jälkeen nollan funktio palauttaa arvon 0. Vaikka tässä ei manipuloida muuttujia tämä nollan palauttaminen voi silti olla hyödyllistä esimerkiksi vikojen löytämiseen. Esimerkiksi vertaamalla funktion palautetta ehtolausekkeessa voimme varmistaa että mitään ei ole menny pieleen ja funktio palauttaa sen mitä sen kuuluukin.
+				</p>
+				<img class="example-image medium-example-image" src="./images/c_silmukka_esimerkki.png">
+			</div>
+		</div>
+
+	</div>
 	</body>
 </html>

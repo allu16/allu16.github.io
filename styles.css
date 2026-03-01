@@ -47,6 +47,10 @@ header a:visited {
 	color: Cyan;
 }
 
+li {
+	text-align: left;
+}
+
 .python-example {
 	background-color: #052505;
 }
