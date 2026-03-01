@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+
+	<header>
+		<a href="./project-example.html" target="_top">Ohjeet ensimmäiseen koodaus projektiin</a>
+		<a> | </a>
+		<a href="./language-comparison.html" target="_top">Ohjelmointikielien vertailua</a>
+	</header>
+
+	<div class="content-container">
+		<h1>Ohjelmoinnin peruskäsitteet</h1>
+		<p>
+			Ohjelmointi koostuu pienistä palasista, joita kutsutaan käsitteiksi. Tällä sivulla tutustut ohjelmoinnin perusrakenteisiin, joita tarvitset kaikissa ohjelmointikielessä. Opit, mitä ovat muuttujat, silmukat, ehtolauseet, ja näet esimerkkejä niiden käytöstä.
+		</p>
+	
+		<div>	
+			<h2>Muuttujat</h2>
+			<p>
+				Muuttuja on kuin laatikko, johon voit tallentaa tietoa. Esimerkiksi nimi = "Anna" tallentaa merkkijonon muuttujaan nimi. Muuttujia käytetään ohjelmissa tietojen säilyttämiseen ja käsittelyyn.
+			</p>
+
+			<div class="python-example">
+				<h3>Python</h3>
+				<p>
+					Python kielessä tämä on todella yksinkertaista. Ohjelmassa esitellään muuttuja nimi jonka arvoksi asetetaan teksti.
+				</p>
+				<img class="example-image small-example-image" src="./images/python_muuttuja_esimerkki.png">
+			</div>
+
+			<div class="java-example">
+				<h3>Java</h3>
+				<p>
+					Java kielessä pitää erikseen mainita mitä tyyppiä mikäkin muuttuja on. Tässä esimerkissä esitellään "String" tyyppinen muuttuja johon asetetaan arvoksi sama teksti. (String tarkoittaa tekstiä)
+				</p>
+				<img class="example-image small-example-image" src="./images/java_muuttuja_esimerkki.png">
+			</div>
+
+			<div class="c-example">
+				<h3>C</h3>
+				<p>
+					C kielessä pitää myös mainita muuttujan tyyppi erikseen, mutta toisin kuin Javassa, C kielessä ei ole "String" tyyppiä. C kielessä on kuitenkin "char" tyyppi johon voidaan asettaa yksi merkki (character). Lisäämällä palikkasulut tyypin perään voimme tehdä siitä muuttujan joka toimii kuin lista. Tällä listalla voimme tallentaa monia merkkejä joista koostuu teksti. Eli esittelemme lista muotoisen char muuttujan johon asetamme arvoksi saman tekstin.
+				</p>
+				<img class="example-image small-example-image" src="./images/c_muuttuja_esimerkki.png">
+			</div>
+		</div>
+
+		<div>
+			<h2>Silmukat</h2>
+			<p>
+				Silmukka on osa koodia joka toistaa sen sisältävän koodin.
+			</p>
+
+			<div class="python-example">
+				<h3>Python</h3>
+				<p>
+					Pythonissa tämä on taas erittäin yksinkertaista. Käytämme for muotoista silmukkaa johon asetamme x nimisen muuttujan. Sen jälkeen "in" ja sen jälkeen annamme silmukalle listan jonka läpi tämä silmukka käy. Tässä esimerkissä käytimme metodia range() joka antaa silmukalle listan nollasta siihen numeroon asti joka metodille annetaan (tässä tapauksessa 10). Tässä koodissa silmukka siis käy koko listan läpi yksi arvo kerrallaan ja asettaa aina sen hetkisen arvon x muuttujaan. Tämän jälkeen silmukka toteuttaa sen sisällä olevan koodin, joka on tässä print() metodi. Print metodi tulostaa ruudulle sen mitä sille annetaan eli tässä kun annetaan x muuttuja niin se tulostaa x muuttujan arvon. Joten silmukka asettaa listalta yksi kerrallaan nollasta kymmeneen jokaisen arvon x muuttujaan ja tulostaa sen hetkisen arvon ruudulle.
+				</p>
+				<img class="example-image medium-example-image" src="./images/python_silmukka_esimerkki.png">
+			</div>
+
+			<div class="java-example">
+				<h3>Java</h3>
+				<p>
+					Javassa for silmukka on hieman monimutkaisempi mutta sen takia se on myös joustavampi. for silmukan sisällä on 3 eri osiota jotka on eroteltu ";" merkillä. Ensimmäisessä osiossa esitellään in (integer eli kokonaisluku) tyyppinen muuttuja jonka nimi on "i" ja sen arvoksi asetetaan 0. Toisessa osiossa on totuuslauseke, for silmukka aina tarkistaa onko tämä lauseke tosi ennen kuin jatkaa silmukan sisällä olevan koodin ajamista. Tässä siis tarkistetaan että onko "i" muuttuja pienempi kuin 10. Jos "i" on pienempi silloin lauseke on tosi ja silmukan sisäinen koodi ajetaan. Jos "i" ei ole alle 10 silmukka ei aja sisältäväänsä koodia vaan siirrytään seuraavaan osaa koodia silmukan ulkopuolelle. Kolmannessa osassa voidaa lisätä koodia jonka silmukka ajaa aina kun se on suorittanut sisältävänsä koodin. Eli koska tässä siihen on lisätty "i++" se tarkoittaa ettö kun koodi on ajettu silmukka nostaa "i" muuttujan arvoa yhdellä (sama kuin "i = i + 1"). Silmukan sisällä oleva koodi tulostaa "i" muuttujan arvon ruudulle.
+				</p>
+				<img class="example-image medium-example-image" src="./images/java_silmukka_esimerkki.png">
+			</div>
+
+			<div class="c-example">
+				<h3>C</h3>
+				<p>
+					C:ss' for silmukka toimii samalla tavalla kuin javassa mutta metodi jolla tulostetaan muuttujan arvo ruudulle on eri.
+				</p>
+				<img class="example-image medium-example-image" src="./images/c_silmukka_esimerkki.png">
+			</div>
+
+		</div>
+
+		<div>
+			<h2>Ehtolausekkeet</h2>
+			<p>
+				Ehtolauseke on samalla tavalla osa koodia joka sisältää muuta koodia kuin silmukka, mutta tässä sen sisäinen koodi suoritetaan aina vain kerran. Ehtolausekkeeseen annetaan joku totuuslauseke ja jos se on tosi niin koodi suoritetaan. Jos ei ole lauseke ei ole tosi, koodia ei suoriteta ja siirrytään ehtolausekkeen ulkopuolelle.
+			</p>
+			<p>
+				Tämä on aikalailla sama kaikissa kielissä mutta taas arvon tulostus tapahtuu eri metodeilla eri kielissä. if lauseke tarkistaa onko annettu ehtolauseke tosi eli tässä onko a pienempi kuin b.
+			</p>
+		</div>
+
+	</div>
+
+	</body>
+</html>
