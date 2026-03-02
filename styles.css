@@ -5,12 +5,15 @@
 
 body {
 	background-color: #151515;
+	background-image: url("./images/100_taustakuva.jpg");
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;	
+
+	margin: unset;
 }
 
 .content-container {
@@ -21,6 +24,9 @@ body {
 	text-align: center;
 
 	width: 70%;
+
+	background-color: #111;
+	opacity: 0.9;
 }
 
 div {
@@ -38,22 +44,21 @@ div p {
 }
 
 header {
+	width: 70%;
+
 	font-size: 1.2em;
+
+	background-color: #111;
+	opacity: 0.9;
 }
 
-@media screen and (max-width: 1000px) {
-	header {
-		font-size: 1.5em;
-	}
-}
-
-header a {
+a {
 	font-weight: bold;
 	text-decoration: none;
 	color: Cyan;
 }
 
-header a:visited {
+a:visited {
 	color: Cyan;
 }
 
@@ -61,22 +66,45 @@ li {
 	text-align: left;
 }
 
+iframe {
+ 	width: 70%;
+	height: 30em;
+}
+
+@media screen and (max-width: 1000px) {
+	header {
+		font-size: 1.5em;
+	}
+
+	iframe {
+		height: 15em;
+	}
+}
+
 .python-example {
-	background-color: #052505;
+	background-color: #161;
+	opacity: 0.9;
 }
 
 .java-example {
-	background-color: #252500;
+	background-color: #660;
+	opacity: 0.9;
 }
 
 .c-example {
-	background-color: #250505;
+	background-color: #611;
+	opacity: 0.9;
 }
 
 .example-image {
 	width: auto;
 
 	margin-bottom: 1em;
+}
+
+.info-image {
+	max-width: 100%;
+	height: 25em;
 }
 
 .small-example-image {
@@ -89,6 +117,7 @@ li {
 
 .question {
 	background-color: #111;
+	opacity: 0.9;
 }
 
 .question > input, button {
@@ -112,6 +141,8 @@ li {
 		height: 3em;
 
 		margin: 1.5em;
+
+		font-size: 1.2em;
 	}
 	
 	.question > button {
